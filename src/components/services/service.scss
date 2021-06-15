@@ -1,0 +1,103 @@
+$c12:#808080;
+$green:#0A7F2E;
+$c2:#666666;
+#services-page{
+    &  > main{
+      position: relative;
+       &  > aside{
+      &  >    img:first-child{
+          position: absolute;
+          top: 1.5rem;
+          left: 3%;
+          height: 45%;
+        }
+        &  >  img:last-child{
+          position: absolute;
+         bottom: 0;
+          left: 1.5%;
+          height: 45%;
+        }
+      }
+       &  > .container{
+       &  > .row:nth-child(2){
+           & > .col-12:first-child{
+            border: 2px dashed $green;
+          }
+          & > .col-12{
+            box-shadow: 3px 3px 10px rgba(10, 127, 46, 0.2) , -3px -3px 10px rgba(10, 127, 46, 0.2) !important;
+            & > .row:last-child{
+              .col-6{
+                padding: 0!important;
+                img{
+                  width: 85px !important;
+                  height: 85px !important;
+                }
+              }
+            }
+          }
+          & > .aa{
+            box-shadow: none!important;
+          }
+       }
+      }
+    }
+
+  }
+  @media screen and (min-width: 992px){
+    #services-page{
+    &  > main{
+      &  > .container{
+       &  > .row:nth-child(2){
+          & >.col-12{
+              width: 23% !important;
+              height: 280px !important;
+            }
+            & > .col-12:nth-child(2){
+              margin-left: 2.66666666667%;
+              margin-right: 2.66666666667%;
+            }
+            & > .col-12:nth-child(3){
+              margin-right: 2.66666666667%;
+            }
+            & > .col-12:nth-child(5){
+              margin: 2.66666666667% 0 !important;
+            }
+            & > .col-12:nth-child(6){
+              margin: 2.66666666667% 2.66666666667% !important;
+            }
+            & > .col-12:nth-child(7){
+                margin: 2.66666666667% 2.66666666667% 0 0 !important;
+              }
+            & > .col-12:nth-child(8){
+                  margin: 2.66666666667% 0 !important;
+                }
+       }}
+    }}
+  }
+
+  @media screen and (min-width: 768px )  and (max-width: 992px){
+      #services-page{
+    &  > main{
+      &  > .container{
+       &  > .row:nth-child(2){
+              & >.col-12{
+              width: 48% !important;
+              height: 280px !important;
+              margin-bottom: 4%;
+            }
+            & > .col-12:nth-child(odd){
+              margin-right: 4% !important;
+            }
+       }}}}
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+       #services-page{
+    &  > main{
+      &  > .container{
+       &  > .row:nth-child(2){
+           & >.col-12{
+              margin-bottom: 5%;
+            }
+       }}}}
+  }

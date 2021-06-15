@@ -1,0 +1,137 @@
+$c12:#808080;
+$green:#0A7F2E;
+$c2:#666666;
+.page-about{
+    &  > main{
+      position: relative;
+       &  > aside{
+      &  >    img:first-child{
+          position: absolute;
+          top: 1.5rem;
+          left: 3%;
+          height: 45%;
+        }
+        &  >  img:last-child{
+          position: absolute;
+         bottom: 0;
+          left: 1.5%;
+          height: 45%;
+        }
+      }
+       &  > .container{
+      
+        &  >  .row{
+            
+         &  >   .col-xl-9{
+            position: relative;
+         &  >     img{
+              position: absolute;
+              top: 10%;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              z-index: -999;
+            }
+          }
+        }
+        &  >  .row:nth-child(2) {
+         &  >   .col-lg-6{
+          &  >    .up-page {
+              position: relative;
+              padding: 15px;
+              img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -999;
+                height: 100%;
+                width: 100%;
+              }
+              p {
+                font-size: 12px;
+                color: $c12;
+              }
+              & > div {
+                display: grid;
+                justify-content: end;
+
+                button {
+                  border: none;
+                  background-color: $green;
+                  color: white;
+                  font-size: 12px;
+                  padding: 5px 10px;
+                }
+              }
+            }
+          }
+        }
+        &  >  .row:nth-child(3){
+          .col-lg-4{
+            .section1{
+              .row{
+                .col-6{
+                  h3{
+                    color: $green;
+                  }
+                  p{
+                    color: $c2;
+                  }
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+  @media screen and (min-width: 992px) {
+
+ .page-about{
+      &  > main{
+        &  >  .container {
+          &  >  .row:nth-child(2) {
+          &  >    .col-lg-6 {
+              position: relative;
+              img:nth-child(2) {
+                position: absolute;
+                right: -2rem;
+                bottom: -2rem;
+                z-index: -999;
+              }
+
+              &  >  .up-page {
+                background-color: white;
+                padding: 15px;
+                position: absolute;
+                left: 65%;
+                bottom: -15%;
+                z-index: 999;
+                width: 100%;
+                // box-shadow: 1px 10px 5px lightgrey, -1px -1px 1px lightgrey;
+
+                p {
+                  font-size: 12px;
+                  color: $c12;
+                }
+                & > div {
+                  display: grid;
+                  justify-content: end;
+
+                  button {
+                    border: none;
+                    background-color: $green;
+                    color: white;
+                    font-size: 12px;
+                    padding: 5px 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
